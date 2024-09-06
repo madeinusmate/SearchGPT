@@ -1,0 +1,17 @@
+{
+  "name": "SearchGPT",
+  "version": "1.0",
+  "description": "Use the URL bar to ask ChatGPT.",
+  "manifest_version": 3,
+  "omnibox": { "keyword": "gpt" },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://chatgpt.com/"],
+  "permissions": ["tabs", "scripting", "webNavigation"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
